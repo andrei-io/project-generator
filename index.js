@@ -33,11 +33,12 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 	fs.mkdirSync(`${CURR_DIR}/${projectName}`);
 
 	createDirectoryContents(templatePath, projectName);
+
+	process.chdir(projectName);
+	exec('git init');
 });
 
 function createDirectoryContents(templatePath, newProjectPath) {
-	process.chdir(newProjectPath);
-	exec('git init');
 	const filesToCreate = fs.readdirSync(templatePath);
 	filesToCreate.forEach((file) => {
 		const origFilePath = `${templatePath}/${file}`;
