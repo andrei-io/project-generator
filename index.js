@@ -1,7 +1,7 @@
 #! D:\Programe\NodeJS\node.exe
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const { exec } = require('child_process');
 const CHOICES = fs.readdirSync(`${__dirname}/templates`);
 
 const QUESTIONS = [
@@ -36,8 +36,9 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 });
 
 function createDirectoryContents(templatePath, newProjectPath) {
+	process.chdir(newProjectPath);
+	exec('git init');
 	const filesToCreate = fs.readdirSync(templatePath);
-
 	filesToCreate.forEach((file) => {
 		const origFilePath = `${templatePath}/${file}`;
 

@@ -1,0 +1,16 @@
+{
+	"name": "first-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"author": "Andrei Ionica",
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^9.0.0",
+		"electron-packager": "^14.2.1"
+	},
+	"dependencies": {}
+}
