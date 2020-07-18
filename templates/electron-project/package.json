@@ -1,16 +1,25 @@
 {
-	"name": "first-app",
-	"version": "1.0.0",
-	"description": "",
-	"main": "main.js",
-	"scripts": {
-		"start": "electron ."
-	},
-	"author": "Andrei Ionica",
-	"license": "MIT",
-	"devDependencies": {
-		"electron": "^9.0.0",
-		"electron-packager": "^14.2.1"
-	},
-	"dependencies": {}
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Andrei Ionica",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-packager": "^14.2.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {}
 }
