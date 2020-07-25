@@ -1,4 +1,5 @@
-#! D:\Programe\NodeJS\node.exe
+#! /home/andrei/.nvm/versions/node/v14.6.0/bin/node
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { exec } = require('child_process');
