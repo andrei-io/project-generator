@@ -21,4 +21,13 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 
 	process.chdir(projectName);
 	exec('git init');
+	try {
+		const commands = fs.readFileSync('./commands.txt', 'utf8').split('\n');
+		for (let i = 0; i < commands.length; i++) {
+			console.log(commands[i], '******************');
+			exec(commands[i]);
+		}
+	} catch (e) {
+		console.log('No commands file found...');
+	}
 });
