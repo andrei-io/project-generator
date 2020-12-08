@@ -1,6 +1,5 @@
 #! /home/andrei/.nvm/versions/node/v14.6.0/bin/node
 
-// TODO: add commands file for every template
 const inquirer = require('inquirer');
 const { exec } = require('child_process');
 const fs = require('fs');
