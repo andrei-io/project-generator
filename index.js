@@ -1,7 +1,7 @@
 #! /home/andrei/.nvm/versions/node/v14.15.3/bin/node
 
 const inquirer = require('inquirer');
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
 const fs = require('fs');
 
 const { copyFolder } = require('./moveFiles');
@@ -23,7 +23,7 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 		const commands = fs.readFileSync('./commands.txt', 'utf8').split('\n');
 		for (let i = 0; i < commands.length; i++) {
 			console.log(commands[i], '******************');
-			exec(commands[i]);
+			execSync(commands[i]);
 		}
 	} catch (e) {
 		console.log('No commands file found...');
