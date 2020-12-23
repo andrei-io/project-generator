@@ -1,4 +1,4 @@
-#! /home/andrei/.nvm/versions/node/v14.6.0/bin/node
+#! /home/andrei/.nvm/versions/node/v14.15.3/bin/node
 
 const inquirer = require('inquirer');
 const { exec } = require('child_process');
