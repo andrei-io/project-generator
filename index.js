@@ -19,7 +19,6 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 	copyFolder(templatePath, projectName);
 
 	process.chdir(projectName);
-	exec('git init');
 	try {
 		const commands = fs.readFileSync('./commands.txt', 'utf8').split('\n');
 		for (let i = 0; i < commands.length; i++) {
