@@ -1,6 +1,4 @@
 npm i -D typescript nodemon @types/node
 npm i -D prettier eslint
+npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npx install-peerdeps --dev eslint-config-airbnb-base
-npm install --save-dev eslint-config-prettier eslint-plugin-prettier
-npm install eslint-plugin-import --save-dev
-npm install babel-eslint --save-dev
